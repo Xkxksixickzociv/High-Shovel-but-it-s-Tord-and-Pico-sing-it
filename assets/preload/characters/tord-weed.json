@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-45,
+				-9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "TordIdle"
+		},
+		{
+			"offsets": [
+				11,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "TordLeft"
+		},
+		{
+			"offsets": [
+				-40,
+				-65
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "TordDown"
+		},
+		{
+			"offsets": [
+				-46,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "TordUp"
+		},
+		{
+			"offsets": [
+				-63,
+				-8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "TordRight"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-65,
+				-40
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "TordCough",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/TordWeed",
+	"position": [
+		0,
+		20
+	],
+	"healthicon": "tord",
+	"flip_x": false,
+	"healthbar_colors": [
+		217,
+		18,
+		76
+	],
+	"camera_position": [
+		-170,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}
