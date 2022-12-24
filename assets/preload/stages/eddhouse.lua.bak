@@ -1,0 +1,48 @@
+function onStartCountdown()
+modchart = true
+	return Function_Continue;
+end
+
+function onCreate()
+	-- background shit
+	makeLuaSprite('sky', 'sky', -1790, -800);
+	setScrollFactor('sky', 0.1, 0.5);
+	scaleObject('sky', 0.7, 0.7);
+	
+	makeLuaSprite('house', 'house', -2790, -1000);
+	setScrollFactor('house', 1, 1);
+	
+	if not lowQuality then
+		makeLuaSprite('city', 'SecondParalax', -1290, -500);
+		setScrollFactor('city', 0.65, 0.65);
+		scaleObject('city', 0.8, 0.8);
+	end
+
+	addLuaSprite('sky', false); --bg
+	addLuaSprite('city', false);
+	addLuaSprite('house', false);
+end
+
+function onCreatePost()
+setProperty('gf.visible', false)
+end
+
+function onUpdate(elapsed)
+	if modchart == true then
+    	--Moves BF Notes to Opponent side.
+        noteTweenX('bfTween1', 4, 90, 0.01, 'linear');
+        noteTweenX('bfTween2', 5, 205, 0.01, 'linear');
+        noteTweenX('bfTween3', 6, 315, 0.01, 'linear');
+        noteTweenX('bfTween4', 7, 425, 0.01, 'linear');
+        --Moves Opponent Notes to BF side.
+        noteTweenX('dadTween1', 0, 730, 0.01, 'linear');
+        noteTweenX('dadTween2', 1, 845, 0.01, 'linear');
+        noteTweenX('dadTween3', 2, 955, 0.01, 'linear');
+        noteTweenX('dadTween4', 3, 1065, 0.01, 'linear');
+    end
+end
+
+function onGameOver()
+	modchart = false
+	return Function_Continue;
+end
